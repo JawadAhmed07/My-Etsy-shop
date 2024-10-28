@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      domains: ['scontent.fkhi22-1.fna.fbcdn.net'],
+    },
+  };
+  
+  export default nextConfig;
+  
