@@ -1,56 +1,26 @@
-import { useState } from 'react';
-import Link from 'next/link';
+// src/components/Header.js
+
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <header style={styles.header}>
-      <div style={styles.logo}>Logo</div>
-      <nav style={styles.nav}>
-        <Link href="/"><a style={styles.link}>Home</a></Link>
-        <Link href="/about"><a style={styles.link}>About</a></Link>
-        <Link href="/contact"><a style={styles.link}>Contact</a></Link>
-        <Link href="/products"><a style={styles.link}>Products</a></Link>
-      </nav>
-      <div style={styles.modeToggle} onClick={toggleDarkMode}>
-        {darkMode ? 'Light Mode' : 'Dark Mode'}
+    <header className="flex items-center justify-between px-8 py-4 shadow-md">
+      {/* Logo */}
+      <div className="flex items-center space-x-2">
+        <Image src="/logo.png" alt="My Website Logo" width={40} height={40} /> {/* Adjust the width and height */}
+        <span className="text-xl font-bold">logo</span>
       </div>
+
+      {/* Navigation */}
+      <nav className="space-x-6">
+        <Link href="/home" className="hover:text-blue-500 transition-colors">Home</Link>
+        <Link href="/about" className="hover:text-blue-500 transition-colors">About</Link>
+        <Link href="/services" className="hover:text-blue-500 transition-colors">Services</Link>
+        <Link href="/contact" className="hover:text-blue-500 transition-colors">Contact</Link>
+      </nav>
     </header>
-  );
-};
+  )
+}
 
-const styles = {
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '10px 20px',
-    backgroundColor: '#f8f9fa',
-    borderBottom: '1px solid #e7e7e7',
-  },
-  logo: {
-    flex: 1,
-  },
-  nav: {
-    flex: 2,
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  link: {
-    margin: '0 15px',
-    textDecoration: 'none',
-    color: '#333',
-  },
-  modeToggle: {
-    flex: 1,
-    textAlign: 'right',
-    cursor: 'pointer',
-  },
-};
-
-export default Header;
+export default Header

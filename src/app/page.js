@@ -1,7 +1,9 @@
-import { Button } from "@/components/ui/button";
+// "use client"
+import Header from "@/components/ui/EasyToUseComp/header";
 
 export default function Home() {
   return (
-    <h1>Starting bismillah</h1>
+    // <Header/>
+    <h1>This is page.js</h1>
   );
 }
