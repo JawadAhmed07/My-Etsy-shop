@@ -21,7 +21,7 @@ export function SheetDemo() {
   const [email, setEmail] = useState("");
   const [orderDetails, setOrderDetails] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const [price, setPrice] = useState(5);
+  const [price, setPrice] = useState("");
   const [image, setImage] = useState(null);
   const [fileFormat, setFileFormat] = useState("");
   const [deadline, setDeadline] = useState("");
@@ -91,7 +91,8 @@ export function SheetDemo() {
 
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="price" className="text-right">Price ($)</Label>
-            <Input id="price" type="number" min="5" value={price} onChange={(e) => setPrice(e.target.value >= 5 ? e.target.value : 5)} className="col-span-3" placeholder="Minimum $5" required />
+            <Input id="price" placeholder="+5$"  type="number" min="5" value={price} 
+            onChange={(e) => setPrice(e.target.value >= `+5$` ? e.target.value : 5)} className="col-span-3" required />
           </div>
 
           <div className="grid grid-cols-4 items-center gap-4">
