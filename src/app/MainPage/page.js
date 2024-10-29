@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
 import OnSale from '@/components/ui/EasyToUseComp/onSale';
+import Reviews from '@/components/ui/EasyToUseComp/reviews';
 import { SheetDemo } from '@/components/ui/EasyToUseComp/sheetbtn';
+import TrendingItems from '@/components/ui/EasyToUseComp/trendingItems';
 import Image from 'next/image';
 
 
@@ -33,10 +35,21 @@ export default function MainPage() {
                 <div className="items-center align-center pt-5 w-full">
                     <h1 className="text-center uppercase text-4xl font-bold w-2/5 mx-auto outline rounded-full">On sale items</h1>
                     <div className="mt-10 container mx-auto flex flex-col items-center p-10">
-                        <OnSale />
+                    <OnSale />
                     </div>
                 </div>
             </section>
+            {/* trending section */}
+            <section>
+            <div className="items-center align-center pt-5 w-full">
+                    <h1 className="text-center uppercase text-4xl font-bold w-2/5 mx-auto outline rounded-full">Trending items</h1>
+                    <div className="mt-10 container mx-auto flex flex-col items-center p-10">
+                    <TrendingItems />
+                    </div>
+                </div>
+            </section>
+            {/* reviews section */}
+            <Reviews/>
         </>
     )
 }

@@ -43,7 +43,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur  border-b z-10">
+    <nav className="p-3 bg-background/50 sticky top-0 backdrop-blur border-b z-10">
       {/* <LoadingBar
         color='#933ce6'
         progress={progress}

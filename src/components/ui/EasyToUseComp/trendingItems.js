@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Image, Typography } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Button, Image, Space, Typography } from 'antd';
 import { SkeletonCard } from './skeleton';
 
 const { Link, Text } = Typography;
@@ -12,39 +12,40 @@ const products = [
         name: "Flower Ghost SVG",
         originalPrice: 6,
         discountPercentage: 50,
-        link: "https://www.etsy.com/listing/123456789/flower-ghost-svg"
+        link: "https://i.etsystatic.com/36540294/r/il/45d13e/5394789042/il_794xN.5394789042_9jp0.jpg"
     },
     {
         id: 2,
         name: "Halloween Pumpkin SVG",
         originalPrice: 12,
-        discountPercentage: 15,
-        link: "https://www.etsy.com/listing/987654321/halloween-pumpkin-svg"
+        discountPercentage: 70,
+        link: "https://i.etsystatic.com/36540294/r/il/45d13e/5394789042/il_794xN.5394789042_9jp0.jpg"
     },
     {
         id: 3,
         name: "Cute black Bat SVG",
-        originalPrice: 8,
-        discountPercentage: 10,
-        link: "https://www.etsy.com/listing/456789123/cute-bat-svg"
+        originalPrice: 80,
+        discountPercentage: 90,
+        link: "https://i.etsystatic.com/36540294/r/il/45d13e/5394789042/il_794xN.5394789042_9jp0.jpg"
     },
     {
         id: 4,
         name: "Witch Hat SVG",
         originalPrice: 11,
         discountPercentage: 25,
-        link: "https://www.etsy.com/listing/234567890/witch-hat-svg"
+        link: "https://i.etsystatic.com/36540294/r/il/45d13e/5394789042/il_794xN.5394789042_9jp0.jpg"
     },
     {
         id: 5,
         name: "Spider Web SVG",
         originalPrice: 9,
         discountPercentage: 30,
-        link: "https://www.etsy.com/listing/345678901/spider-web-svg"
+        link: "https://i.etsystatic.com/36540294/r/il/45d13e/5394789042/il_794xN.5394789042_9jp0.jpg"
     },
 ];
 
-const OnSale = () => {
+const TrendingItems = () => {
+    // Function to calculate the discounted price
     const calculateDiscountedPrice = (originalPrice, discountPercentage) => {
         return (originalPrice - (originalPrice * discountPercentage) / 100).toFixed(2);
     };
@@ -55,14 +56,14 @@ const OnSale = () => {
                 <div key={product.id} className="bg-white rounded-lg p-4 shadow-md flex flex-col items-center">
                     <Image
                         width={200}
-                        src={`https://vectplace.com/wp-content/uploads/2024/07/VP3630-Trick-or-Treat-SVG-Flower-Ghost-SVG-Halloween-SVG.webp?noCache=${Date.now()}`}
+                        src={`${product.link}?noCache=${Date.now()}`}
                         alt={product.name}
+                        className="rounded-lg"
                         placeholder={
                             <SkeletonCard/>
                         }
-                        className="rounded-lg"
                     />
-                    <div className="mt-2">
+                    <div className="mt-2 ">
                         <Link href={product.link} target="_blank" className="text-blue-600 hover:underline text-md font-semibold">
                             {product.name}
                         </Link>
@@ -82,4 +83,4 @@ const OnSale = () => {
     );
 };
 
-export default OnSale;
+export default TrendingItems;
