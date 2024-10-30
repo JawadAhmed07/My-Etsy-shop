@@ -92,7 +92,7 @@ const ReviewCard = ({ review }) => {
           <p className="text-sm text-gray-500 mb-3">{date}</p>
         </div>
         <div className="pl-16">
-          <img src={""} alt="Google" width={40} height={40} />
+          {/* <img src={""} alt="Google" width={40} height={40} /> */}
         </div>
       </div>
 
@@ -127,13 +127,20 @@ function Reviews() {
     <>
       <section>
         <div className="text-center py-10">
-          <h1 className="text-3xl text-gray-500">What some of our satisfied customers are saying</h1>
-          <h1 className="text-4xl font-bold py-5 text-gray-700">Real Client Testimonials</h1>
+          <h1 className="text-3xl dark:text-white text-gray-500">What some of our satisfied customers are saying</h1>
+          <h1 className="text-4xl dark:text-white font-bold py-5 text-gray-700"> Client Testimonials</h1>
         </div>
         <div className="flex gap-2 justify-center">
 
 
-          <div><img className="w-52 my-16 " src={""} alt="Review illustration" width={200} height={200} /></div>
+          <div className='w-72 my-16 px-10 items-center text-center'>
+            <h1 className='text-2xl font-bold'>Excellent</h1>
+            <h1>Star Image</h1>
+            <h1 className='text-sm'>Based on <span className='font-bold'>47 reviews</span>
+            </h1>
+            <h1>Google image </h1>
+            {/* <img className="w-52 my-16 " src={""} alt="Review illustration" width={200} height={200} /> */}
+          </div>
           <div className="flex overflow-x-auto">
             {/* Render 4 reviews */}
             {visibleReviews.map((review) => (
@@ -147,3 +154,6 @@ function Reviews() {
 }
 
 export default Reviews;
+
+
+

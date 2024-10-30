@@ -65,8 +65,8 @@ const Navbar = () => {
           
           <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300"> Home
           </Link>
-          <Link href="/about" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
-            About
+          <Link href="/products" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
+            Products
           </Link>
           <Link href="/blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
             Blog

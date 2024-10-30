@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Footer from '@/components/ui/EasyToUseComp/footer';
 import OnSale from '@/components/ui/EasyToUseComp/onSale';
 import Reviews from '@/components/ui/EasyToUseComp/reviews';
 import { SheetDemo } from '@/components/ui/EasyToUseComp/sheetbtn';
@@ -16,17 +17,11 @@ export default function MainPage() {
                 <div className="relative">
                     <Image
                         src="https://scontent.fkhi22-1.fna.fbcdn.net/v/t39.30808-6/463946672_122145349196308513_3838852537802018120_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=w4QTDQlbwJgQ7kNvgE_NnZQ&_nc_zt=23&_nc_ht=scontent.fkhi22-1.fna&_nc_gid=AEOVHpMgZGzxsk_aCPwtOAj&oh=00_AYBI1i6EoSgak0OSWVYgEvrnjeH-xOVAwwuabOBc9kYXHQ&oe=67257323"
-                        width={960} // Adjust width as needed
+                        width={900} // Adjust width as needed
                         height={960} // Adjust height as needed
                         alt="Home Page Image"
                         className="w-full"
                     />
-                    {/* <div className="absolute inset-0 flex items-center justify-center ">
-                        <div className="m-2 ">
-                            <SheetDemo />
-                        </div>
-                        <Button className="m-2">Shop now on Etsy</Button>
-                    </div> */}
                 </div>
             </section>
             {/* On sale items
@@ -49,7 +44,8 @@ export default function MainPage() {
                 </div>
             </section>
             {/* reviews section */}
-            <Reviews/>
+            {/* <Reviews/> */}
+            <Footer/>
         </>
     )
 }
