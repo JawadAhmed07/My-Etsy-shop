@@ -27,7 +27,7 @@ export default function Footer() {
                         </button>
                     </div>
                     <p className="text-gray-500 dark:text-white text-sm mt-4 text-center">
-                        We'll never share your email with anyone else.
+                        Well never share your email with anyone else.
                     </p>
                 </div>
             </div>
@@ -136,7 +136,7 @@ export default function Footer() {
             <div>
                 <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                     <p className="text-gray-500 text-sm text-center sm:text-left">
-                        © 2020 Tailblocks —
+                    &copy; 2020 Tailblocks —
                         <a
                             href="https://twitter.com/knyttneve"
                             rel="noopener noreferrer"

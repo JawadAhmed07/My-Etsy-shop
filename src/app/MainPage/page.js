@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button';
-import Footer from '@/components/ui/EasyToUseComp/footer';
 import OnSale from '@/components/ui/EasyToUseComp/onSale';
 import Reviews from '@/components/ui/EasyToUseComp/reviews';
 import { SheetDemo } from '@/components/ui/EasyToUseComp/sheetbtn';
@@ -45,7 +44,6 @@ export default function MainPage() {
             </section>
             {/* reviews section */}
             {/* <Reviews/> */}
-            <Footer/>
         </>
     )
 }
