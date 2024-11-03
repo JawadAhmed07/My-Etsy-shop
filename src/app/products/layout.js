@@ -18,10 +18,10 @@ export default function Product({ children }) {
                     <h1>Latest discount</h1>
                 </div>
                 <div className="w-2/3">
-                    <p>our offers are our offers areour offers areour offers areour offers areour offers areour offers areour offers areour offers areour offers areour offers areour offers areour offers areour offers areour offers areour offers are </p>
+                    <p>our offers are our offers areour offers areour offers areour offers areour offers areour offers areour r offers areour offers areour offers are </p>
                 </div>
             </div>
-            <section className=" bg-gray-200 w-full flex">
+            <section className="my-10  w-full flex">
 
                 <div className="border-r-2 w-48 border-r-purple-800">
                     <Link
