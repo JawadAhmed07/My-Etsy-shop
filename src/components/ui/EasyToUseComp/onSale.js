@@ -9,38 +9,38 @@ const { Link, Text } = Typography;
 const products = [
     {
         id: 1,
-        name: "Flower Ghost SVG",
-        originalPrice: 6,
-        discountPercentage: 50,
-        link: "https://www.etsy.com/listing/123456789/flower-ghost-svg"
+        name: "Testing SVG",
+        originalPrice: 60,
+        discountPercentage: 95,
+        link: "https://i.etsystatic.com/48756310/r/il/507f90/5878498380/il_1588xN.5878498380_nevx.jpg"
     },
     {
         id: 2,
         name: "Halloween Pumpkin SVG",
         originalPrice: 12,
         discountPercentage: 15,
-        link: "https://www.etsy.com/listing/987654321/halloween-pumpkin-svg"
+        link: "https://i.etsystatic.com/46326733/r/il/f0057e/5467749201/il_794xN.5467749201_9wjl.jpg"
     },
     {
         id: 3,
         name: "Cute black Bat SVG",
         originalPrice: 8,
         discountPercentage: 10,
-        link: "https://www.etsy.com/listing/456789123/cute-bat-svg"
+        link: "https://i.etsystatic.com/50191947/r/il/2831b6/5832282598/il_794xN.5832282598_qsbh.jpg"
     },
     {
         id: 4,
         name: "Witch Hat SVG",
         originalPrice: 11,
         discountPercentage: 25,
-        link: "https://www.etsy.com/listing/234567890/witch-hat-svg"
+        link: "https://i.etsystatic.com/21750556/r/il/3cdea8/4248637740/il_794xN.4248637740_jx45.jpg"
     },
     {
         id: 5,
         name: "Spider Web SVG",
         originalPrice: 9,
         discountPercentage: 30,
-        link: "https://www.etsy.com/listing/345678901/spider-web-svg"
+        link: "https://i.etsystatic.com/24561537/r/il/2b1538/5638599501/il_794xN.5638599501_khl9.jpg"
     },
 ];
 
@@ -55,7 +55,9 @@ const OnSale = () => {
                 <div key={product.id} className="bg-white rounded-lg p-4 shadow-md flex flex-col items-center">
                     <Image
                         width={200}
-                        src={`https://vectplace.com/wp-content/uploads/2024/07/VP3630-Trick-or-Treat-SVG-Flower-Ghost-SVG-Halloween-SVG.webp?noCache=${Date.now()}`}
+                        height={200}
+                        // src={`${product.link}?noCache=${Date.now()}`}
+                        src={`${product.link}?noCache=${Date.now()}`}
                         alt={product.name}
                         placeholder={
                             <SkeletonCard/>
