@@ -96,8 +96,10 @@ const Navbar = () => {
                 <SheetTitle className="font-bold my-4">DesignSpark</SheetTitle>
                 <SheetDescription>
                   <div className="flex flex-col gap-6">
-                  <SheetDemo/>
                     <Link href="/"> Home
+                    </Link>
+                    <Link href="/products">
+                      Products
                     </Link>
                     <Link href="/about">
                       About
@@ -111,6 +113,7 @@ const Navbar = () => {
                     <Link href="/AboutUs">
                       About Us
                     </Link>
+                  <SheetDemo/>
                   </div>
                 </SheetDescription>
               </SheetHeader>
