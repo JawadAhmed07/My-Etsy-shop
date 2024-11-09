@@ -11,7 +11,7 @@ export default function Contact() {
           Get in Touch with Us!
         </h2>
         <p className="text-center text-gray-700 text-lg">
-          We’re here to help! Whether you have questions, need assistance, or want a custom piece, we’d love to hear from you.
+          Were here to help! Whether you have questions, need assistance, or want a custom piece, we’d love to hear from you.
         </p>
         
         {/* Contact Form */}
@@ -90,5 +90,4 @@ export default function Contact() {
     </div>
   );
 }
-// just maintining streak in github
 

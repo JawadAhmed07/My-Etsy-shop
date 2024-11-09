@@ -63,19 +63,21 @@ const Navbar = () => {
         </Link>
         <div className="hidden md:flex space-x-4 items-center">
           
-          <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300"> Home
+          <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300">Home
           </Link>
           <Link href="/products" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
             Products
           </Link>
-          <Link href="/blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
+          <Link href="/Blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
             Blog
           </Link>
           <Link href="/contact" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
             Contact
           </Link>
+          <Link href="/AboutUs" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
+            About us
+          </Link>
           <SheetDemo/>
-          <Button>Etsy</Button>
             <ModeToggle />
         </div>
 
@@ -100,11 +102,14 @@ const Navbar = () => {
                     <Link href="/about">
                       About
                     </Link>
-                    <Link href="/blog">
+                    <Link href="/Blog">
                       Blog
                     </Link>
                     <Link href="/contact">
                       Contact
+                    </Link>
+                    <Link href="/AboutUs">
+                      About Us
                     </Link>
                   </div>
                 </SheetDescription>

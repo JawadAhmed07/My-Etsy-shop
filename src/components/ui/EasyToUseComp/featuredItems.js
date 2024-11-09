@@ -1,8 +1,7 @@
 "use client";
 
 import { Button, Image, Space, Typography } from 'antd';
-import { SkeletonCard } from '@/components/ui/EasyToUseComp/skeleton';
-
+import { SkeletonCard } from './skeleton';
 
 const { Link, Text } = Typography;
 
@@ -55,10 +54,42 @@ const products = [
         link: "https://i.etsystatic.com/18296881/r/il/f9c537/6138342866/il_794xN.6138342866_njzw.jpg",
         etsyLink: "https://www.etsy.com/listing/1764905389/just-a-girl-who-loves-fall-svg-file-fall?click_key=08b478bd573b4308e8496e47ab1538b9a9ac30bc%3A1764905389&click_sum=f949796c&ref=shop_home_feat_1&pro=1"
     },
+    {
+        id: 7,
+        name: "Etsy testing link",
+        originalPrice: 8,
+        discountPercentage: 10,
+        link: "https://i.etsystatic.com/18296881/r/il/f9c537/6138342866/il_794xN.6138342866_njzw.jpg",
+        etsyLink: "https://www.etsy.com/listing/1764905389/just-a-girl-who-loves-fall-svg-file-fall?click_key=08b478bd573b4308e8496e47ab1538b9a9ac30bc%3A1764905389&click_sum=f949796c&ref=shop_home_feat_1&pro=1"
+    },
+    {
+        id: 8,
+        name: "Etsy testing link",
+        originalPrice: 8,
+        discountPercentage: 10,
+        link: "https://i.etsystatic.com/18296881/r/il/f9c537/6138342866/il_794xN.6138342866_njzw.jpg",
+        etsyLink: "https://www.etsy.com/listing/1764905389/just-a-girl-who-loves-fall-svg-file-fall?click_key=08b478bd573b4308e8496e47ab1538b9a9ac30bc%3A1764905389&click_sum=f949796c&ref=shop_home_feat_1&pro=1"
+    },
+    {
+        id: 9,
+        name: "Etsy testing link",
+        originalPrice: 8,
+        discountPercentage: 10,
+        link: "https://i.etsystatic.com/18296881/r/il/f9c537/6138342866/il_794xN.6138342866_njzw.jpg",
+        etsyLink: "https://www.etsy.com/listing/1764905389/just-a-girl-who-loves-fall-svg-file-fall?click_key=08b478bd573b4308e8496e47ab1538b9a9ac30bc%3A1764905389&click_sum=f949796c&ref=shop_home_feat_1&pro=1"
+    },
+    {
+        id: 10,
+        name: "Etsy testing link",
+        originalPrice: 8,
+        discountPercentage: 10,
+        link: "https://i.etsystatic.com/18296881/r/il/f9c537/6138342866/il_794xN.6138342866_njzw.jpg",
+        etsyLink: "https://www.etsy.com/listing/1764905389/just-a-girl-who-loves-fall-svg-file-fall?click_key=08b478bd573b4308e8496e47ab1538b9a9ac30bc%3A1764905389&click_sum=f949796c&ref=shop_home_feat_1&pro=1"
+    },
     // Add more products as needed
 ];
 
-const HallowenCard = () => {
+const FeaturedItems = () => {
     // Function to calculate the discounted price
     const calculateDiscountedPrice = (originalPrice, discountPercentage) => {
         return (originalPrice - (originalPrice * discountPercentage) / 100).toFixed(2);
@@ -100,4 +131,4 @@ const HallowenCard = () => {
     );
 };
 
-export default HallowenCard;
+export default FeaturedItems;

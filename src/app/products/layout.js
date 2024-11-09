@@ -1,3 +1,4 @@
+import { SheetDemo } from "@/components/ui/EasyToUseComp/sheetbtn";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,12 +14,14 @@ export default function Product({ children }) {
                     className="w-full"
                 />
             </div>
-            <div className="flex container px-10">
-                <div className="w-1/3">
-                    <h1>Latest discount</h1>
+            <div className="flex container px-10 py-5">
+                <div className="w-1/6">
+                    <h1>Announcement
+                    </h1>
+                    <h1>Last updated on 03 Jun, 2024</h1>
                 </div>
-                <div className="w-2/3">
-                    <p>our offers are our offers areour offers areour offers areour offers areour offers areour offers areour r offers areour offers areour offers are </p>
+                <div className="w-4/6">
+                    <p className="text-md">Enjoy our exclusive discounts on trending SVG designs! Now is the perfect time to grab unique designs at unbeatable prices. Whether you re looking for seasonal specials or everyday favorites, we ve got something for everyone. Plus, we offer custom design services to bring your unique vision to life! Just reach out, and let s create something special together. Don t miss out  shop now and get creative with designs that inspire!</p>
                 </div>
             </div>
             <section className="my-10  w-full flex">
@@ -32,8 +35,11 @@ export default function Product({ children }) {
                         className="text-center p-2 w-full block hover:bg-purple-200" href="/products/hallowen">
                         halloween
                     </Link>
+                    <Link
+                        className="text-center p-2 w-full block hover:bg-purple-200" href="/products/hallowen">
+                        <SheetDemo />
+                    </Link>
                 </div>
-
                 {children}</section>
         </>
     )

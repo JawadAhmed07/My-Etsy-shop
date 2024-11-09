@@ -1,16 +1,20 @@
+import FeaturedItems from "@/components/ui/EasyToUseComp/featuredItems";
+import TrendingItems from "@/components/ui/EasyToUseComp/trendingItems";
 
 
 
 
 
 export default function ProductContent() {
-    return (
-      <div className="text-center text-3xl mx-auto p-20">
-        <h1>Product Content</h1>
-        <h1>Idhr featured product ki heading main random products ayengi
-            
-        </h1>
+  return (
+    <div>
+      <div className="px-5 text-2xl">
+        <h1>Featured Items</h1>
+      </div>
+      <div className="px-5">
+        <FeaturedItems />
 
       </div>
-    );
-  }
+    </div>
+  );
+}
