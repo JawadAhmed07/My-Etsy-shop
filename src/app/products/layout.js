@@ -140,4 +140,3 @@ export default function Product({ children }) {
     </>
   );
 }
-// maintaining github
